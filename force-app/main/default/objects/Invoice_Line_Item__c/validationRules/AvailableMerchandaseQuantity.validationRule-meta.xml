@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AvailableMerchandaseQuantity</fullName>
+    <active>true</active>
+    <errorConditionFormula>Quantity__c &gt; Merchandise__r.AvailableQuantity__c</errorConditionFormula>
+    <errorDisplayField>Quantity__c</errorDisplayField>
+    <errorMessage>You can&apos;t buy this product , because quantity in warehouse less than in your order !</errorMessage>
+</ValidationRule>
